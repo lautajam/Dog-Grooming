@@ -1,6 +1,7 @@
 
 package com.lautajamdev.peluqueriacanina.logica;
 
+import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,7 +11,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Mascota {
+public class Mascota implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -20,8 +21,8 @@ public class Mascota {
     private String nombre_perro;
     private String raza;
     private String color;
-    private boolean alergico;
-    private boolean aten_esp;
+    private String alergico;
+    private String aten_esp;
     private String obs;
 
     @OneToOne
@@ -30,7 +31,7 @@ public class Mascota {
     public Mascota() {
     }
 
-    public Mascota(int num_cliente, String nombre_perro, String raza, String color, boolean alergico, boolean aten_esp, String obs, Duenio duenio){
+    public Mascota(int num_cliente, String nombre_perro, String raza, String color, String alergico, String aten_esp, String obs, Duenio duenio){
         this.num_cliente = num_cliente;
         this.nombre_perro = nombre_perro;
         this.raza = raza;
@@ -73,19 +74,19 @@ public class Mascota {
         this.color = color;
     }
 
-    public boolean isAlergico() {
+    public String isAlergico() {
         return alergico;
     }
 
-    public void setAlergico(boolean alergico) {
+    public void setAlergico(String alergico) {
         this.alergico = alergico;
     }
 
-    public boolean isAten_esp() {
+    public String isAten_esp() {
         return aten_esp;
     }
 
-    public void setAten_esp(boolean aten_esp) {
+    public void setAten_esp(String aten_esp) {
         this.aten_esp = aten_esp;
     }
 
