@@ -64,6 +64,11 @@ public class CargaDatos extends javax.swing.JFrame {
         btnLimpiar.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         btnLimpiar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lautaro\\Downloads\\limp.png")); // NOI18N
         btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -272,6 +277,19 @@ public class CargaDatos extends javax.swing.JFrame {
     private void txtNombDuenioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombDuenioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNombDuenioActionPerformed
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+
+        txtCelDuenio.setText("");
+        txtColor.setText("");
+        txtNombDuenio.setText("");
+        txtNombre.setText("");
+        txtObs.setText("");
+        txtRaza.setText("");
+        cmbAlergico.setSelectedIndex(0);
+        cmbAtEsp.setSelectedIndex(0);
+        
+    }//GEN-LAST:event_btnLimpiarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
