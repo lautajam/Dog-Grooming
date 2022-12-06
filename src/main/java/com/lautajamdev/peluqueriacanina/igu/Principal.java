@@ -136,7 +136,9 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVerDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDatosActionPerformed
-        // TODO add your handling code here:
+        VerDatos verDatos = new VerDatos();
+        verDatos.setVisible(true);
+        verDatos.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnVerDatosActionPerformed
 
     private void btnCargarDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarDatosActionPerformed

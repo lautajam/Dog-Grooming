@@ -74,7 +74,7 @@ public class Mascota implements Serializable {
         this.color = color;
     }
 
-    public String isAlergico() {
+    public String getAlergico() {
         return alergico;
     }
 
@@ -82,7 +82,7 @@ public class Mascota implements Serializable {
         this.alergico = alergico;
     }
 
-    public String isAten_esp() {
+    public String getAten_esp() {
         return aten_esp;
     }
 

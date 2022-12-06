@@ -2,6 +2,7 @@
 package com.lautajamdev.peluqueriacanina.logica;
 
 import com.lautajamdev.peluqueriacanina.persistencia.ControladoraPersistencia;
+import java.util.List;
 
 public class ControladoraLogica {
     
@@ -25,6 +26,10 @@ public class ControladoraLogica {
         masco.setDuenio(duenio);
         
         controlPersis.guardar(duenio,masco);
+    }
+
+    public List<Mascota> traerMascotas() {
+        return  controlPersis.traerMascotas();
     }
 
 }   

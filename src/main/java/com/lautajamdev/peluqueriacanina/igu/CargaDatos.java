@@ -2,6 +2,8 @@
 package com.lautajamdev.peluqueriacanina.igu;
 
 import com.lautajamdev.peluqueriacanina.logica.ControladoraLogica;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 
 public class CargaDatos extends javax.swing.JFrame {
 
@@ -297,6 +299,12 @@ public class CargaDatos extends javax.swing.JFrame {
         String celDuenio = txtCelDuenio.getText();
 
         controlLog.guardar(nombreMasco, raza, color, observaciones, alergico, ateEsp, nombDuenio, celDuenio);
+        
+        JOptionPane optionPane = new JOptionPane("Se guardó correctamente");
+        optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        JDialog dialog = optionPane.createDialog("Guardado exitosamente");
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
