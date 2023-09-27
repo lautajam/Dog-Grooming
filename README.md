@@ -28,5 +28,3 @@ Data entered into the application is stored in a database for future access. The
 ## Technologies Used
 - Programming Language: Java with JPA (EclipseLink)
 - Database: MySQL
-
-Translated with www.DeepL.com/Translator (free version)
