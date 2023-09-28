@@ -28,3 +28,5 @@ Data entered into the application is stored in a database for future access. The
 ## Technologies Used
 - Programming Language: Java with JPA (EclipseLink)
 - Database: MySQL
+
+OOP Java Course Repo: https://github.com/lautajam/OOP-Java-Course
